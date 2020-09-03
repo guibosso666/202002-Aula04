@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jogo de Sorte</title>
+</head>
+<body>
+
+<p>Clique para jogar.</p>
+
+<button onclick="myFunction()">Clique aqui</button>
+
+<p id="demo"></p>
+
+<script  type="text/JavaScript">
+function myFunction()
+{
+var x;
+var y = 6;
+var num=prompt("Digite um numero de 1 a 6:");
+var Rand = Math.floor(Math.random()*y) + 1;
+if (num==Rand){
+  x="Parabens voce acertou o numero!!! Seu numero: " + num + " numero sorteado " + Rand;
+  document.getElementById("demo").innerHTML=x;
+  }else{
+      x="Nao foi dessa vez!!! Seu numero: " + num + " numero sorteado " + Rand;
+      document.getElementById("demo").innerHTML=x;
+  }
+}
+</script>
+
+</body>
+</html>
